@@ -47,20 +47,7 @@ public class StaffService {
         }
     }
 
-    public String delete(long id){
-        if (staffs.containsKey(id)){
+    public void delete(long id){
             staffs.remove(id);
-            return "Deleted successfully";
-
-        }
-        else{
-            return "This ID is not exits";
-        }
     }
-
-
-
-
-
-
 }
